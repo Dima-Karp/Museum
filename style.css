@@ -2,8 +2,122 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+
 }
 
+/* font
+===================================== */
+/* .forum-regular {
+  font-family: "Forum", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-<uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+/* header
+====================================== */
+.header {
+    width: 100%;
+    max-width: 1920px;    
+    background-color: #030303;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+}
+
+.header_content {
+    width: 100%;
+    max-width: 1440px;
+    height: 150px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 199px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.logo_img {
+    width: 49px;
+    height: 26px;
+}
+
+.logo_text {
+    font-family: "Forum", serif;
+    font-size: 28px;
+    line-height: auto;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #fff;
+    margin-left: 25px;
+}
+
+.nav_list {
+    height: 26px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.nav_item {
+    margin-left: 55px;
+
+}
+
+.nav_item:first-child {
+    margin-left: 0;
+}
+
+.nav_item_link {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    letter-spacing: 2px;
+    line-height: auto;
+    font-weight: 100;
+    
+}
+
+/* welcome
+===================================================== */
+
+.welcome {
+    width: 100%;
+    max-width: 1920px;    
+    background-color: #030303;
+    margin-top: 150px;
+}
+
+.welcome_content {
+    height: 810px;
+
+
+
+
+}
 
 
 
