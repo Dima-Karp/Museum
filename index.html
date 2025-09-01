@@ -44,8 +44,8 @@
                 </nav> <!--nav-->
 
             </div> <!--header_content-->
-        </header> <!--ontainer-->
-    </div> <!--cheader-->
+        </header> <!--container-->
+    </div> <!--header-->
 
     <main>
         
@@ -69,7 +69,7 @@
                                 <span class="num_right">05</span>
                             </div>
                             <ul class="welcome_slider_courusel">
-                                <li class="welcome_slider_courusel_square active"></li>  
+                                <li class="welcome_slider_courusel_square active_square"></li>  
                                 <li class="welcome_slider_courusel_square"></li>
                                 <li class="welcome_slider_courusel_square"></li>
                                 <li class="welcome_slider_courusel_square"></li>
@@ -191,20 +191,98 @@
                         <iframe class="video_item" src="https://www.youtube.com/embed/NOhDysLnTvY?si=CSBDC1hiPPQEJ9cf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
 
-                    <ul class="video_content_slider">
-                        <li>
-                            <img src="" alt="" class="video_arrow_left">
-                        </li>
-                        <li class="video_slider_circle"></li>
-                        <li class="video_slider_circle"></li>
-                        <li class="video_slider_circle"></li>
-                        <li class="video_slider_circle"></li>
-                        <li class="video_slider_circle"></li>
-                        <li class="video_arrow_right"></li>
-                    </ul>
+                    <div class="video_content_slider">
+                        <img src="image/video/Vector (Stroke).svg" alt="" class="video_arrow_left">
+                        <ul class="video_slider_courusel">
+                            <li class="video_slider_circle active_circle"></li>
+                            <li class="video_slider_circle"></li>
+                            <li class="video_slider_circle"></li>
+                            <li class="video_slider_circle"></li>
+                            <li class="video_slider_circle"></li>
+                        </ul>
+                        <img src="image/video/Vector (Stroke).svg" alt="" class="video_arrow_right">
+                    </div>
                 </div><!--video_content-->
             </div><!--container-->
         </section><!--video-->
+
+        <section class="gallery">
+            <div class="container">
+                <div class="gallery_content">
+                    <h2 class="gallery_content_title">
+                        Art Gallery
+                    </h2>
+                    <div class="gallery_content_img">
+                        <img src="image/gallery/1.jpg" alt="" class="gallery_img_item">
+                        <img src="image/gallery/2.jpg" alt="" class="gallery_img_item">
+                        <img src="image/gallery/3.jpg" alt="" class="gallery_img_item">
+                        <img src="image/gallery/4.jpg" alt="" class="gallery_img_item">
+                        <img src="image/gallery/5.jpg" alt="" class="gallery_img_item">
+                        <img src="image/gallery/6.jpg" alt="" class="gallery_img_item">
+                        <img src="image/gallery/7.jpg" alt="" class="gallery_img_item">
+                        <img src="image/gallery/8.jpg" alt="" class="gallery_img_item">
+                        <img src="image/gallery/9.jpg" alt="" class="gallery_img_item">
+                        <img src="image/gallery/10.jpg" alt="" class="gallery_img_item">
+                        <img src="image/gallery/11.jpg" alt="" class="gallery_img_item">
+                        <img src="image/gallery/12.jpg" alt="" class="gallery_img_item">
+                    </div>
+                    <div class="gallery_content_gradient"></div>
+                </div><!--gallery_content-->
+            </div><!--container-->
+        </section><!--gallery-->
+
+        <section class="tickets">
+            <div class="container">
+                <div class="tickets_content">
+                    <h2 class="tickets_title">
+                        BUY TICKETS
+                    </h2>
+                    <div class="tickets_form">
+                        <img src="image/tickets/tickets.jpg" alt="" class="tickets_img">
+
+                        <div class="ticket_type">
+                            <form method="" action="" class="ticket_type_form">
+                                <fieldset>
+                                    <legend>Ticket Type</legend>
+                                    <label for="Permanent_exhibition">
+                                        <input type="radio" name="Permanent_exhibition" id="Permanent_exhibition" checked>
+                                        Permanent exhibition
+                                    </label><br>
+                                    <label for="Temporary_exhibition">
+                                        <input type="radio" name="Temporary_exhibition" id="Temporary_exhibition">
+                                        Temporary exhibition
+                                    </label><br>
+                                    <label for="Combined_Admission">
+                                        <input type="radio" name="Combined_Admission" id="Combined_Admission">
+                                        Combined Admission
+                                    </label>
+                                </fieldset>
+                            </form>
+                        </div>
+
+                        <div class="amount">
+                            <form action="" method="" class="ticket_type_amount">
+                                <fieldset>
+                                    <legend>Amount</legend>
+                                    <label for="Basic">Basic 18+ <br>
+                                        <input type="number" name="Basic" id="Basic">
+                                    </label> <br>
+                                    <label for="Senior">Senior 65+ <br>
+                                        <input type="number" name="Senior" id="Senior">
+                                    </label>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div><!--tickets_content-->
+            </div><!--container-->
+        </section><!--tickets-->
+
+        <section class="parallax">
+            <img src="image/parallax/parallax 1.jpg" alt="" class="parallax_img">
+        </section>
+
+        
     </main>
 
 

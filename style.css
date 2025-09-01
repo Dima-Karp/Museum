@@ -241,7 +241,7 @@ a {
     transition: color .1s linear;
 }
 
-.welcome_slider_courusel_square.active {
+.welcome_slider_courusel_square.active_square {
     color: #9a8c3d;
 }
 
@@ -393,6 +393,10 @@ a {
     transform: translateX(-50%);
 }
 
+
+/* video
+====================================================== */
+
 .video_content {
     display: flex;
     flex-direction: column;
@@ -456,16 +460,125 @@ a {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin: 0 auto 60px auto;
+}
+
+.video_slider_courusel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .video_slider_circle {
     color: #999999;
     font-size: 50px;
+    margin: 0 10px 0 40px;
+    cursor: pointer;
 }
 
+.video_slider_circle.active_circle {
+    color: #333333;
+}
 
+.video_arrow_left {
+    transform: rotate(180deg);
+    padding-right: 30px;
+    margin-right: 20px;
+}
 
+.video_arrow_left, .video_arrow_right {
+    cursor: pointer;
+}
 
+/* gallery
+========================================================== */
+
+.gallery {
+    background-color: #030303;
+    padding-top: 75px;
+}
+
+.gallery_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.gallery_content_title {
+    font-family: 'Forum', serif;
+    font-weight: 400;
+    font-size: 80px;
+    letter-spacing: 5px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.gallery_content_img {
+    height: 2000px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.gallery_img_item {
+    width: 31%;
+    margin-top: 24px;
+}
+
+.gallery_content_gradient {
+    background: linear-gradient(to bottom,rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+    height: 360px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+}
+
+/* tickets
+======================================================== */
+
+.tickets {
+    padding: 75px 0;
+}
+
+.tickets_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.tickets_title {
+    font-family: 'Forum', serif;
+    font-weight: 400;
+    font-size: 80px;
+    letter-spacing: 5px;
+    color: #9D8665;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+    border-bottom: 3px solid #710707;
+}
+
+.tickets_form {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+fieldset {
+    border: none;
+}
+
+.parallax {
+    max-width: 1920px;
+    width: 100%;
+}
+
+.parallax_img {
+    flex: 1 1 auto;
+}
 
 
 
