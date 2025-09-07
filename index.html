@@ -237,23 +237,23 @@
                     <h2 class="tickets_title">
                         BUY TICKETS
                     </h2>
-                    <div class="tickets_form">
+                    <div class="tickets_forms">
                         <img src="image/tickets/tickets.jpg" alt="" class="tickets_img">
 
                         <div class="ticket_type">
                             <form method="" action="" class="ticket_type_form">
-                                <fieldset>
-                                    <legend>Ticket Type</legend>
-                                    <label for="Permanent_exhibition">
-                                        <input type="radio" name="Permanent_exhibition" id="Permanent_exhibition" checked>
+                                <fieldset class="ticket_form_items">
+                                    <legend class="ticket_type_title">Ticket Type</legend>
+                                    <label for="Permanent_exhibition" class="ticket_type_form_item">
+                                        <input type="radio" name="ticket_type_name" value="Permanent_exhibition" id="Permanent_exhibition" checked>
                                         Permanent exhibition
                                     </label><br>
-                                    <label for="Temporary_exhibition">
-                                        <input type="radio" name="Temporary_exhibition" id="Temporary_exhibition">
+                                    <label for="Temporary_exhibition" class="ticket_type_form_item">
+                                        <input type="radio" name="ticket_type_name" value="Temporary_exhibition" id="Temporary_exhibition">
                                         Temporary exhibition
                                     </label><br>
-                                    <label for="Combined_Admission">
-                                        <input type="radio" name="Combined_Admission" id="Combined_Admission">
+                                    <label for="Combined_Admission" class="ticket_type_form_item">
+                                        <input type="radio" name="ticket_type_name" value="Combined_Admission" id="Combined_Admission">
                                         Combined Admission
                                     </label>
                                 </fieldset>
@@ -261,17 +261,23 @@
                         </div>
 
                         <div class="amount">
-                            <form action="" method="" class="ticket_type_amount">
-                                <fieldset>
-                                    <legend>Amount</legend>
-                                    <label for="Basic">Basic 18+ <br>
-                                        <input type="number" name="Basic" id="Basic">
+                            <form action="" method="" class="amount_form">
+                                <fieldset class="ticket_form_items">
+                                    <legend class="amount_title">Amount</legend>
+                                    <label for="Basic" class="amount_form_item">Basic 18+ <br>
+                                        <input type="number" name="Basic" value="1" id="Basic" class="Basic">
                                     </label> <br>
-                                    <label for="Senior">Senior 65+ <br>
-                                        <input type="number" name="Senior" id="Senior">
+                                    <label for="Senior" class="amount_form_item">Senior 65+ <br>
+                                        <input type="number" name="Senior" value="1" id="Senior" class="Senior">
                                     </label>
                                 </fieldset>
+                                <div class="total">
+                                    <p>Total € </p>
+                                    <p>220</p>
+                                </div>
+                                <input type="button" value="Buy Now" class="button_buy_now">
                             </form>
+
                         </div>
                     </div>
                 </div><!--tickets_content-->
@@ -282,8 +288,104 @@
             <img src="image/parallax/parallax 1.jpg" alt="" class="parallax_img">
         </section>
 
-        
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts_content">
+                    <h2 class="contacts_title">
+                        Contacts
+                    </h2>
+
+                    <div class="contacts_material">
+                        <div class="contacts_material_text">
+                            <h3 class="contacts_material_text_title">
+                                Palais Royal <br> Musee du Louvre
+                            </h3>
+                            <div class="contacts_info">
+                                <address class="contacts_item">
+                                    <span>address:</span>
+                                    <span>75001 Paris, France</span>
+                                </address>
+                                <a href="tel:+33(0) 1 40 20 50 50" class="contacts_item"><span>phone: </span>+33(0) 1 40 20 50 50</a>
+                                <a href="mailto:info@louvre.fr" class="contacts_item"><span>mail: </span>sinfo@louvre.fr</a>
+                            </div>
+                        </div>
+                        <div class="contacts_material_map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1312.432836329633!2d2.335476291413112!3d48.86077181865071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e25d0482b3d%3A0x1c0b82c6e1d85100!2zNzUwMDEg0J_QsNGA0LjQtiwg0KTRgNCw0L3RhtC40Y8!5e0!3m2!1sru!2sby!4v1757164288338!5m2!1sru!2sby" width="960" height="620" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div><!--contacts_content-->
+            </div><!--container-->
+        </section><!--contacts-->
+   
     </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_content">
+
+                <div class="footer_text">
+                    <a href="#">
+                        <div class="logo">
+                            <img class="logo_img" src="image/logo_img.svg"></img>
+                            <h4 class="logo_text">Louvre</h4>
+                        </div>
+                    </a>
+
+                    <nav class="nav">
+                        <ul class="footer_nav">
+                            <li class="footer_nav_item">
+                                <a class="footer_nav_item_link" href="">Visiting</a>
+                            </li>
+                            <li class="footer_nav_item">
+                                <a class="footer_nav_item_link" href="">Explore</a>
+                            </li>
+                            <li class="footer_nav_item">
+                                <a class="footer_nav_item_link" href="">Video</a>
+                            </li>
+                            <li class="footer_nav_item">
+                                <a class="footer_nav_item_link" href="">Gallery</a>
+                            </li>
+                            <li class="footer_nav_item">
+                                <a class="footer_nav_item_link" href="">Tickets</a>
+                            </li>
+                            <li class="footer_nav_item">
+                                <a class="footer_nav_item_link" href="">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav> <!--nav-->   
+
+                </div><!--footer_text-->
+
+                <div class="footer_social">
+                    <a href="" class="footer_social_item">
+                        <img src="image/footer/youtube.svg" alt="">
+                    </a>
+                    <a href="" class="footer_social_item">
+                        <img src="image/footer/instag.svg" alt="">
+                    </a>
+                    <a href="" class="footer_social_item">
+                        <img src="image/footer/facebook.svg" alt="">
+                    </a>
+                    <a href="" class="footer_social_item">
+                        <img src="image/footer/twit.svg" alt="">
+                    </a>
+                    <a href="" class="footer_social_item">
+                        <img src="image/footer/pinterest.svg" alt="">
+                    </a>
+                </div>
+            </div><!--footer_content-->
+        </div><!--container-->
+
+        <div class="last_string">
+            <div class="container">
+                <div class="last_string_wrap">
+                    <p>© 2025</p>
+                    <p>The Rolling Scopes School</p>
+                    <p>Username</p>
+                </div>
+            </div><!--container-->
+        </div>
+    </footer>
 
 
 </body>
